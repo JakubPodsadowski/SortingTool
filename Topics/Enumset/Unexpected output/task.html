@@ -1,0 +1,14 @@
+<div class="step-text">
+<p></p>
+<pre><code class="language-java">enum Sections {
+    DAISY, LOTUS, TULIP, ROSE
+}</code></pre>
+<pre><code class="language-java">EnumSet&lt;Sections&gt; sections = EnumSet.allOf(Sections.class);
+sections.remove(Sections.LOTUS);
+sections.remove(Sections.DAISY);
+sections.remove(Sections.ROSE);
+sections.add(Sections.ROSE);
+sections.add(Sections.LOTUS);
+System.out.println(sections);</code></pre>
+<p>What will be the output in the console?</p>
+</div>
